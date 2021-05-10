@@ -20,6 +20,7 @@ module.exports = {
         filename: 'js/bundle.js', // public/js に出力される
     },
     module: {
+        //devtool: "eval-source-map",
         rules: [ //配列[Rule]の指定
             {
                 test: /\.svelte$/, //変換するファイルの指定

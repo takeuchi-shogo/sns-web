@@ -1,10 +1,10 @@
-import page from 'page'
 import style from './../sass/style.scss' //import を使って style.scss(sass)を読み込む
+import 'bootstrap'
 
-import IndexController from './controllers/IndexController.js'
+import App from '/src/App.svelte';
 
-const index = new IndexController
+const app = new App({
+	target: document.body,
+});
 
-page('/', index.index)
-
-page()
+export default app;
