@@ -7,7 +7,7 @@ const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
 module.exports = {
-    entry: './src/main.js', //エントリーポイント
+    entry: './main.js', //エントリーポイント
     resolve: {
         alias: { 
             svelte: path.dirname(require.resolve('svelte/package.json')) //alias の名前:ディレクトリまでの絶対パス
@@ -20,6 +20,7 @@ module.exports = {
         filename: 'js/bundle.js', // public/js に出力される
     },
     module: {
+        //devtool: "eval-source-map",
         rules: [ //配列[Rule]の指定
             {
                 test: /\.svelte$/, //変換するファイルの指定
