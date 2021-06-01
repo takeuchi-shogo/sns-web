@@ -5,6 +5,6 @@ node_modules/
 app/public/**/bundle.*
 app/public/css/style.*
 
-app/src/Config.js
+Config.js
 
 !.gitkeep
