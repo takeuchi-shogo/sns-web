@@ -9,9 +9,9 @@
 
 	export let category = ''
 	export let article = ''
-	export let id = ''
+	//export let id = ''
 
-	let initialized = true
+	let initialized = false
 
 	let user = null
 
@@ -36,7 +36,6 @@
 			<MainContents
 				category={ category }
 				article={ article }
-				id={ id }
 			/>
 		</div>
 	</div>

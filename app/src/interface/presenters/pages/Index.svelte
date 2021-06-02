@@ -21,6 +21,8 @@
 </script>
 
 { #if initialized }
+<i class="bi-alarm"></i>
 <a href="/signin">Sign in</a>
 <a href="/signup">Sign Up</a>
+<i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
 { /if }
