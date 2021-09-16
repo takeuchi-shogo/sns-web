@@ -5,7 +5,6 @@
 	import Tweet from '/src/interface/gateways/database/TweetRepository.js'
 
 	const _tweet = new Tweet
-	export let didCreate = (tweet) => {}
 
 	export let showModal = false;
 
