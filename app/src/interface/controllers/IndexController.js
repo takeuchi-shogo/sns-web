@@ -15,6 +15,21 @@ class IndexController {
 		document.getElementById('app').innerText = ''
 		const app = new Index({
 			target: document.getElementById('app'),
+			props: {
+				category: 'index',
+				article: 'index',
+			}
+		})
+	}
+
+	report(context) {
+		document.getElementById('app').innerText = ''
+		const app = new Index({
+			target: document.getElementById('app'),
+			props: {
+				category: 'index',
+				article: 'report',
+			}
 		})
 	}
 

@@ -15,8 +15,10 @@ const tweets = new TweetsController
 
 
 page('/', index.index)
+page('/report', index.report)
 
-page('/signin', index.signin)
+
+page('/login', index.login)
 page('/signup', index.signup)
 page('/signout', index.signout)
 

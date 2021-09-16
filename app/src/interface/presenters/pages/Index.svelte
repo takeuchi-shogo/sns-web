@@ -1,4 +1,7 @@
 <script>
+	import Dashboard from '/src/interface/presenters/pages/Dashboard.svelte'
+	import LP from '/src/interface/presenters/pages/LP.svelte'
+
 	import User from '/src/interface/gateways/database/UserRepository.js'
 
 	const _user = new User
@@ -20,7 +23,8 @@
 	init()
 </script>
 
-{ #if initialized }
-<a href="/signin">Sign in</a>
-<a href="/signup">Sign Up</a>
+{ #if !initialized }
+	<LP/>
+{ :else if initialized }
+	<Dashboard/>
 { /if }
