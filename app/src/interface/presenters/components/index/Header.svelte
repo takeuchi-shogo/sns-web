@@ -17,7 +17,7 @@
 			<button>Facebookでログイン</button>
 		</li>
 		<li>
-			<button>ログイン</button>
+			<button><a href="/login">ログイン</a></button>
 		</li>
 	</ul>
 </nav>

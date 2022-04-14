@@ -2,21 +2,27 @@
 	import Dashboard from '/src/interface/presenters/pages/Dashboard.svelte'
 	import LP from '/src/interface/presenters/pages/LP.svelte'
 
-	import User from '/src/interface/gateways/database/UserRepository.js'
+	import Me from '/src/interface/gateways/database/MeRepository.js'
 
-	const _user = new User
+	export let category = ''
+	export let article = ''
+
+	const _me = new Me
 
 	let initialized = false
 
 	let user = null
+	$: console.log(initialized)
 
 	function init() {
-		_user.get((error, message, data) => {
+		_me.get((error, message, data) => {
 			if (!error) {
+				initialized = false
 				window.location.href = '/dashboard'
+				return
 			}
 			user = data
-			initialized = true
+			//initialized = true
 		})
 	}
 
@@ -24,7 +30,13 @@
 </script>
 
 { #if !initialized }
-	<LP/>
+	<LP
+		category={ category }
+		article={ article }
+	/>
 { :else if initialized }
-	<Dashboard/>
+	<Dashboard
+		category={ category }
+		article={ article }
+	/>
 { /if }

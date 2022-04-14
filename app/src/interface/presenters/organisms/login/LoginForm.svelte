@@ -1,7 +1,7 @@
 <script>
-    import User from '/src/interface/gateways/database/UserRepository.js'
+    import Me from '/src/interface/gateways/database/MeRepository.js'
 
-	const _user = new User
+	const _me = new Me
 
 	let params = {
 		id: '',
@@ -11,13 +11,13 @@
 	let errorMessage = ''
 
 	function signin() {
-		_user.signin(params.id, params.password, (error, message) => {
+		_me.signin(params.id, params.password, (error, message) => {
 			errorMessage = ''
 			if (error) {
 				errorMessage = message
 				return
 			}
-			window.location.href = '/home'
+			window.location.href = '/dashboard'
 		})
 	}
 </script>

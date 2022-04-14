@@ -34,7 +34,7 @@ class IndexController {
 	}
 
 
-	signin(context) {
+	login(context) {
 		document.getElementById('app').innerText = ''
 		const app = new Signin({
 			target: document.getElementById('app'),
