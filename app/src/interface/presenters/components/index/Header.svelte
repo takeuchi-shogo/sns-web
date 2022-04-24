@@ -1,5 +1,17 @@
 <script>
+	import OAuth from '/src/interface/gateways/database/OAuthRepository.js'
 
+	const oauth = new OAuth
+
+	function getLoginURLByGoogle() {
+		oauth.getLoginURLByGoogle((error, message, data) => {
+			if (error) {
+				console.log(message)
+				return
+			}
+			window.location.href = data.loginUrl
+		})
+	}
 </script>
 
 <style>
@@ -15,6 +27,9 @@
 		<li>ニュース</li>
 		<li>
 			<button>Facebookでログイン</button>
+		</li>
+		<li>
+			<button on:click={ getLoginURLByGoogle }>Googleでログイン</button>
 		</li>
 		<li>
 			<button><a href="/login">ログイン</a></button>
