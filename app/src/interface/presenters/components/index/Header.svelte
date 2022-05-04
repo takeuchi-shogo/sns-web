@@ -9,7 +9,7 @@
 				console.log(message)
 				return
 			}
-			window.location.href = data.loginUrl
+			location.href = data.loginUrl
 		})
 	}
 </script>

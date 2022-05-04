@@ -52,6 +52,16 @@ class MeRepository {
 		})
 	}
 
+	signinByGoogle(state, code, callback) {
+		this._api.post('/tokens/google', {state: state, code: code}, (error, message, data) => {
+			if (!error) {
+				callback(error, message)
+				return
+			}
+			callback(error, message)
+		})
+	}
+
 	signout(callback) {
 		cookie.remove('token')
 		cookie.remove('tokenExpireAt')

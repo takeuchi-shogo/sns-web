@@ -17,7 +17,7 @@
 				<a href="/">
 					<div class="img"></div>
 					<div class="text">
-						<h3></h3>
+						<h3>テキスト</h3>
 						<p></p>
 						<div class="sub-info">
 							<span class="time"></span>
@@ -31,7 +31,7 @@
 					<a href="/">
 						<div class="img"></div>
 						<div class="text">
-							<h3></h3>
+							<h3>テキスト</h3>
 							<p></p>
 							<div class="sub-info">
 								<span class="time"></span>
