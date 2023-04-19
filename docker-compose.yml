@@ -8,9 +8,9 @@ services:
         volumes:
             - ./app:/var/www/html
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-        container_name: sns_sample_web
+        container_name: sns_web
         ports:
-            - 5000:5000
+            - 3000:3000
         #tty: true
         environment:
             - VIRTUAL_HOST=sns.sample
