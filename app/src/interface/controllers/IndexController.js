@@ -15,11 +15,34 @@ class IndexController {
 		document.getElementById('app').innerText = ''
 		const app = new Index({
 			target: document.getElementById('app'),
+			props: {
+				category: 'index',
+				article: 'index',
+			}
+		})
+	}
+
+	report(context) {
+		document.getElementById('app').innerText = ''
+		const app = new Index({
+			target: document.getElementById('app'),
+			props: {
+				category: 'index',
+				article: 'report',
+			}
 		})
 	}
 
 
-	signin(context) {
+	login(context) {
+		document.getElementById('app').innerText = ''
+		const app = new Signin({
+			target: document.getElementById('app'),
+		})
+	}
+
+
+	loginByGoogleCallback(context) {
 		document.getElementById('app').innerText = ''
 		const app = new Signin({
 			target: document.getElementById('app'),

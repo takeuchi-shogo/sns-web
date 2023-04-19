@@ -1,16 +1,16 @@
 <script>
-	import User from '/src/interface/gateways/database/UserRepository.js'
+	import Me from '/src/interface/gateways/database/MeRepository.js'
 
 	import LoginForm from '/src/interface/presenters/organisms/login/LoginForm.svelte'
 
-	const _user = new User
+	const _me = new Me
 
 	let initialized = false
 
 	let user = null
 
 	function init() {
-		_user.get((error, message, data) => {
+		_me.get((error, message, data) => {
 			if (!error) {
 				window.location.href = '/dashboard'
 			}

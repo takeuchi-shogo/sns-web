@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path')
 //MiniCssExtractPlugin の読み込み
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
@@ -66,6 +66,6 @@ module.exports = {
 		new MiniCssExtractPlugin({ //cssファイルを別ファイルとして出力する
 			filename: 'css/bundle.css',
 		}),
-		new BundleAnalyzerPlugin(),
+		// new BundleAnalyzerPlugin(),
 	],
 }
