@@ -41,6 +41,14 @@ class IndexController {
 		})
 	}
 
+
+	loginByGoogleCallback(context) {
+		document.getElementById('app').innerText = ''
+		const app = new Signin({
+			target: document.getElementById('app'),
+		})
+	}
+
 	signup(context) {
 		document.getElementById('app').innerText = ''
 		const app = new Signup({

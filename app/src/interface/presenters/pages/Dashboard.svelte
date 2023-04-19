@@ -6,6 +6,7 @@
 
 	export let category = ''
 	export let article = ''
+	export let query = null
 	export let id = ''
 
 </script>
@@ -18,6 +19,7 @@
 		<MainContents
 			category={ category }
 			article={ article }
+			query = { query }
 			id={ id }
 		/>
 	</div>
