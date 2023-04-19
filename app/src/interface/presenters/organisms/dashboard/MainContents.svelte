@@ -1,5 +1,7 @@
 <script>
-	import OAuth from '/src/interface/presenters/components/OAuthCallback.svelte'
+	import Alert from '../../components/alerts/Alert.svelte';
+import Modal from '../../components/modals/Modal.svelte';
+import OAuth from '/src/interface/presenters/components/OAuthCallback.svelte'
 	import Profile from '/src/interface/presenters/components/Profile.svelte'
 	import Search from '/src/interface/presenters/components/Search.svelte'
 	import Tweets from '/src/interface/presenters/components/Tweets.svelte'
@@ -35,5 +37,7 @@
 				<Tweets/>
 			{ /if }
 		{ /if }
+		<Modal/>
+		<Alert/>
 	</div>
 </main>
