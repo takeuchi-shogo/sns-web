@@ -1,12 +1,12 @@
 
 import page from 'page'
 
-import IndexController from '/src/interface/controllers/IndexController.js'
-import OAuthController from '/src/interface/controllers/OAuthController.js'
-import DashboardController from '/src/interface/controllers/DashboardController.js'
-import ProfileController from '/src/interface/controllers/ProfileController.js'
-import SearchController from '/src/interface/controllers/SearchController.js'
-import TweetsController from '../interface/controllers/TweetsController'
+import IndexController from '/src/controllers/IndexController.js'
+import OAuthController from '/src/controllers/OAuthController.js'
+import DashboardController from '/src/controllers/DashboardController.js'
+import ProfileController from '/src/controllers/ProfileController.js'
+import SearchController from '/src/controllers/SearchController.js'
+import TweetsController from '/src/controllers/TweetsController'
 
 const index = new IndexController
 const oauth = new OAuthController
