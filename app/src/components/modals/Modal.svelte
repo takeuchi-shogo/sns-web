@@ -21,11 +21,6 @@
 </script>
 
 
-<style lang="scss">
-
-</style>
-
-
 <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -45,3 +40,8 @@
 <div>
 	<button class="btn btn-primary" on:click|preventDefault={ openModal }>モーダルを表示</button>
 </div>
+
+
+<style lang="scss">
+
+</style>
