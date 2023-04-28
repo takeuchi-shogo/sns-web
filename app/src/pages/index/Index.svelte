@@ -1,5 +1,5 @@
 <script>
-	import Dashboard from '/src/pages/Dashboard.svelte'
+	import Dashboard from '/src/pages/dashboard/Dashboard.svelte'
 	import LP from '/src/pages/LP.svelte'
 
 	import Me from '/src/database/MeRepository.js'

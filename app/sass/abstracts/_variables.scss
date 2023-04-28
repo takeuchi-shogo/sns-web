@@ -1,0 +1,33 @@
+@use 'sass:math';
+
+$spacer: 16px !default;
+
+$spacers: (
+	0: 0,
+	1: $spacer / 4,
+	2: $spacer / 2,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 2,
+	6: $spacer * 2.5,
+);
+
+
+// font family
+$font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+// font size
+$font-xlarge: 18px;
+$font-large: 16px;
+$font-default: 14px;
+$font-small: 13px;
+$font-xsmall: 10px;
+
+
+$font-weight-default: 400px;
+$font-weight-bold: 600px;
+
+
+$line-height-small: 18px;
+$line-height-defalut: 21px;
+$line-height-large: 22.4px;

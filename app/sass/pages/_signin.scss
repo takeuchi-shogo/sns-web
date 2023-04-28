@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.signin-form-container {
+	background-color: $light;
+	.signin-page {
+		height: 100vh;
+		// width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.signin-form {
+			padding: 16px;
+			border: 1px solid $light;
+			box-shadow: 4px 4px 4px;
+			margin: auto;
+			.signin-form-header {
+				font-size: 24px;
+				font-weight: 600;
+				margin-bottom: 16px;
+			}
+			.signin-form-body {
+				.form-group {
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 21px;
+				}
+			}
+		}
+	}
+}

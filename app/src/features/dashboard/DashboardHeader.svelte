@@ -8,8 +8,8 @@
 	}
 </style>
 
-<header class="navbar navbar-dark sticky-top bg-info flex-md-nowrap p-0 shadow">
-	<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">アプリ名</a>
+<header class="navbar navbar-dark sticky-top bg-info flex-md-nowrap p-2 shadow">
+	<a class="navbar-brand col-md-3 col-lg-2 m-0 p-0 fs-6" href="/">アプリ名</a>
 	<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
 	data-bs-target="#sidebarMenu" aria-control="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
 		<i class="bi bi-chevron-bar-down"></i>

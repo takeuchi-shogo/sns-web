@@ -1,8 +1,8 @@
 
-import Index from '/src/pages/Index.svelte';
-import Signin from '/src/pages/Signin.svelte';
-import Signup from '/src/pages/Signup.svelte';
-import Signout from '/src/pages/Signout.svelte';
+import Index from '/src/pages/index/Index.svelte';
+import Signin from '/src/pages/signin/Signin.svelte';
+import Signup from '/src/pages/signup/Signup.svelte';
+import Signout from '/src/pages/signout/Signout.svelte';
 
 
 class IndexController {

@@ -1,7 +1,7 @@
 
 //import Tweets from '/src/components/Tweets.svelte';
 //import Single from '/src/components/TweetSingle.svelte';
-import Dashboard from '/src/pages/Dashboard.svelte';
+import Dashboard from '/src/pages/dashboard/Dashboard.svelte';
 
 class TweetsController {
 

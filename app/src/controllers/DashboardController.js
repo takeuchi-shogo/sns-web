@@ -1,5 +1,5 @@
 
-import Dashboard from '/src/pages/Dashboard.svelte';
+import Dashboard from '/src/pages/dashboard/Dashboard.svelte';
 
 
 class DashboardController {
