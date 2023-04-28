@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.popover-trigger {
+	display: inline;
+}
+
+.popover {
+	padding:16px;
+	.popover-body {
+		padding: 0px;
+		.popover-content-header {
+			@include font-large;
+		}
+		.popover-content {
+			@include font-medium;
+			.popover-content-title {
+				font-weight: 600;
+			}
+			.popover-content-subtitle {
+				color: $light;
+			}
+			.popover-content-body {
+				color: $light;
+			}
+		}
+		.popover-content-footer {
+			color: $light;
+		}
+	}
+}

@@ -3,6 +3,7 @@
 
 	//import TweetForm from './TweetForm.svelte';
 	import Tweets from '/src/database/TweetRepository.js';
+  import Popover from '../popover/Popover.svelte';
 
 	export let p = null
 
@@ -28,13 +29,15 @@
 
 
 <ul class="list-group list-group-flush">
-	{ #each lists as list }
+	{ #each lists as list, i }
 	<a href="/tweets/{ list.id }">
 		<li class="d-flex text-muted pt-3">
 			<div class="pb-3 mb-0 small lh-sm border-bottom" style="width: 30rem">
 				<p>
 					<strong class="d-block text-gray-dark">{ list.id }</strong>
-					{ list.contents }
+					<Popover index={ i }>
+						{ list.contents }
+					</Popover>
 				</p>
 			</div>
 		</li>

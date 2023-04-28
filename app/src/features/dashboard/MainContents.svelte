@@ -1,4 +1,5 @@
 <script>
+
 	import OAuth from '/src/components/OAuthCallback.svelte'
 	import Profile from '/src/components/Profile.svelte'
 	import Search from '/src/components/Search.svelte'

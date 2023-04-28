@@ -13,11 +13,6 @@
 </script>
 
 
-<style lang="scss">
-
-</style>
-
-
 <!-- <div class="position-fixed bottom-0 end-0 p-3"> -->
 	<div class="toast bg-primary text-white" id="toast" data-bs-delay="3000" role="alert" aria-live="assertive" aria-atomic="true">
 		<div class="toast-header">
