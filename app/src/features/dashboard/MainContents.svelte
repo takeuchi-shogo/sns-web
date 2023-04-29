@@ -39,3 +39,4 @@
 		{ /if }
 	</div>
 </main>
+<div class="popover-message"></div>

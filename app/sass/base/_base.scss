@@ -1,3 +1,4 @@
+@use '../abstracts' as *;
 @use 'font' as *;
 
 * {
@@ -12,6 +13,7 @@ body, html {
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	font-family: $font-family-lig;
 }
 
 a {

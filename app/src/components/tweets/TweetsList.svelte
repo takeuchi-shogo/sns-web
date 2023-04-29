@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte'
 
 	//import TweetForm from './TweetForm.svelte';
-	import Tweets from '/src/database/TweetRepository.js';
-  import Popover from '../popover/Popover.svelte';
+	import Tweets from '/src/database/TweetRepository.js'
+	import Popover from '../popover/Popover.svelte'
 
 	export let p = null
 
@@ -37,6 +37,16 @@
 					<strong class="d-block text-gray-dark">{ list.id }</strong>
 					<Popover index={ i }>
 						{ list.contents }
+						<div slot="content">
+							<div class="popover-content">
+								<div class="popover-content-header">
+									{ list.userId }
+								</div>
+								<div class="popover-content-body">
+									{ list.contents }
+								</div>
+							</div>
+						</div>
 					</Popover>
 				</p>
 			</div>

@@ -7,43 +7,52 @@
 	export let index = 0
 
 	let popover
+	let content
+
+	let isOpen = false
+	let isHovering = false
+
 
 	function init() {
 		let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 		popover = popoverTriggerList.map(function (popoverTriggerEl) {
 			popoverTriggerEl.addEventListener('mouseleave', (e) => {
-				hide()
+				if (!isOpen && !isHovering) {
+					hide()
+				}
 			})
 			return new Popover(popoverTriggerEl, {
+				container: 'body',
 				html: true,
-				delay: { "show": 500, "hide": 10 },
-				// title: '<b>Example popover</b> - title',
+				delay: { "show": 50, "hide": 10 },
 				trigger: 'manual',
-				content: `
-				<div on:mouseleave={ hide }>
-					<div class="popover-content-header">
-						Hello
-					</div>
-					<div class="popover-content">
-						<div class="popover-content-title">
-							title title
-						</div>
-						<div class="popover-content-body">
-							<a href='/dashboard'>
-								<b>Geoff</b> - content
-							</a>
-						</div>
-						<div class="">
-							<b>Hilary</b> - content
-						</div>
-					</div>
-				</div>`,
+				content: content,
+				placement: 'auto',
 			})
 		})
 	}
 
-	function show() {
+	function showPopover() {
 		popover[index].show()
+		isOpen = true
+		let el = document.querySelectorAll('.popover')
+		el.forEach((ll) => {
+			ll.addEventListener('mouseenter', () => {
+				isHovering = true
+			})
+			ll.addEventListener('mouseleave', () => {
+				isHovering = false
+				setTimeout(() => {
+					if (!isOpen) {
+						popover[index].hide()
+					}
+				}, 10)
+			})
+		})
+	}
+
+	function hovering() {
+		isOpen = false
 	}
 
 	function hide() {
@@ -56,14 +65,18 @@
 
 </script>
 
-<div>
-	<div
-		class="popover-trigger"
-		data-bs-container="body"
-		data-bs-toggle="popover"
-		data-bs-placement="bottom"
-		on:mouseenter={ show }
-	>
-			<slot></slot>
+<div
+	class="popover-trigger text-nowrap"
+	data-bs-toggle="popover"
+	on:mouseover={ showPopover }
+	on:mouseout={ hovering }
+>
+	<div class="d-inline">
+		<slot></slot>
+		<div hidden>
+			<div bind:this={ content }>
+				<slot name="content"></slot>
+			</div>
+		</div>
 	</div>
 </div>
