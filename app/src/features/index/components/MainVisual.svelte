@@ -6,11 +6,19 @@
 
 </style>
 
-<section>
-	<div>
+<section class="main-visual">
+	<div class="main-visual-container">
 		<div class="main-visual-left">
 			<!--ここにはイメージや見出しを入れる-->
-			<p>今すぐ無料登録!</p>
+			<h1 class="main-visual-title">今すぐ無料登録!</h1>
+			<div class="main-visual-auth-button-group">
+				<div class="auth-button-item">
+					<button class="button">今すぐ無料で始める</button>
+				</div>
+				<div class="auth-button-item">
+					<a href="/signin">アカウントをお持ちの方</a>
+				</div>
+			</div>
 			<p class="terms-of-service">
 				18歳以上なので、
 				<a class="terms-of-service-nav" href="/">利用規約</a>
@@ -26,9 +34,9 @@
 							<span class="tp-login-facebook">
 								Facebookをはじめる
 							</span>
-							<p class="login-facebook-button-agree">Facebookには一切投稿されません</p>
 						</div>
 					</a>
+					<p class="login-facebook-button-agree">Facebookには一切投稿されません</p>
 				</div>
 			</div>
 			<ul class="top-native-down">
@@ -38,8 +46,12 @@
 		</div>
 		<div class="main-visual-right">
 			<!--ここにイメージを入れる-->
+			<img class="main-pic" alt="main-pic" src="/img/image3-29.jpeg">
 		</div>
-		<p class="main-visual-caution">※18歳以下の方はご利用いただけません
+	</div>
+	<div class="main-visual-footer">
+		<p class="main-visual-caution">
+			*18歳以上はご利用になれません
 		</p>
 	</div>
 </section>

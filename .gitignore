@@ -5,6 +5,7 @@ node_modules/
 
 app/public/**/bundle.*
 app/public/css/style.*
+app/public/img/*
 
 Config.js
 

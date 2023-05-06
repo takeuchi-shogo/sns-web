@@ -19,8 +19,8 @@
 				※ xxxx年xx月~xxxx年xx月までの累計会員数です
 			</p>
 		</div>
-		<section>
-			<ul>
+		<section class="select-sections">
+			<ul class="select-section-list">
 				<li>
 					<div class="select-img">
 

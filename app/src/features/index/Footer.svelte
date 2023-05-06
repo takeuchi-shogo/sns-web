@@ -1,5 +1,5 @@
 <script>
-	import Footer from '/src/components/index/Footer.svelte'
+	import Footer from '/src/features/index/components/Footer.svelte'
 </script>
 
 
@@ -7,7 +7,7 @@
 
 </style>
 
-<footer>
+<footer class="footer">
 	<div>
 		<Footer/>
 	</div>
