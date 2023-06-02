@@ -10,14 +10,14 @@
 
 	import Report from '/src/features/index/components/Report.svelte'
 
-	export let category = ''
-	export let article = ''
+	// export let category = ''
+	// export let article = ''
 </script>
 
 
 
-{ #if category == 'index' }
-	{ #if article == 'index' }
+<!-- { #if category == 'index' }
+	{ #if article == 'index' } -->
 		<MainVisual/>
 		<TopHappy/>
 		<Step/>
@@ -26,13 +26,13 @@
 		<Safe/>
 		<Media/>
 		<AppContents/>
-	{ /if }
-{ /if }
-{ #if category == 'index' }
-	{ #if article == 'report' }
+	<!-- { /if }
+{ /if } -->
+<!-- { #if category == 'index' }
+	{ #if article == 'report' } -->
 		<Report/>
-	{ /if }
-{ /if }
+	<!-- { /if } -->
+<!-- { /if } -->
 
 
 <!-- 	{ #if category == 'index' }

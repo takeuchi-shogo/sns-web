@@ -13,6 +13,18 @@
 	border: 1px solid transparent;
 	border-radius: 8px;
 
+	&.medium {
+		font-size: 14px;
+		font-weight: 400;
+		padding: 16px 24px;
+	}
+
+	&.large {
+		font-size: 16px;
+		font-weight: 600;
+		padding: 16px 24px;
+	}
+
 	// button color
 	&.button-color-secondary {
 		border: 1px $secondary solid;
@@ -28,5 +40,11 @@
 
 	&.button-color-light {
 		border: 1px $light solid;
+	}
+
+	&-outline-primary {
+		background-color: $white;
+		color: $dark;
+		border: 2px $primary solid;
 	}
 }

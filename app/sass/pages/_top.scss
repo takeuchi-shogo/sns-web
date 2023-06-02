@@ -194,9 +194,11 @@
 	.step-wrap {
 		width: 100%;
 		.step-headline {
+			margin-bottom: map-get($spacers, 4);
 			.step-title {
 				font-size: 24px;
 				font-weight: 600;
+				margin-bottom: map-get($spacers, 2);
 			}
 			.step-description {
 				
@@ -212,9 +214,16 @@
 					flex: 1;
 					display: flex;
 					flex-direction: column;
+					&:nth-child(2) {
+						padding-left: map-get($spacers, 4);
+						padding-right: map-get($spacers, 4);
+	
+					}
 					.step-section-list-item-title {
 						font-size: 16px;
 						font-weight: 600;
+						height: 40px;
+						margin-bottom: $spacer;
 					}
 					.step-section-list-item-description {
 						font-size: 14px;
@@ -233,19 +242,104 @@
 	margin: auto;
 	margin-bottom: 32px;
 	.select-wrap {
+		display: flex;
+		flex-direction: column;
+		.select-title {
+			margin-bottom: map-get($spacers, 4);
+			h2 {
+				margin-bottom: map-get($spacers, 1);
+			}
+			.select-title-footer {
+				margin-bottom: map-get($spacers, 2);
+			}
+		}
 		.select-sections {
 			.select-section-list {
 				list-style: none;
 				margin: 0;
 				padding: 0;
+				display: grid;
+				grid-template: auto-flow/ 1fr;
+				gap: map-get($spacers, 3);
+				.select-text {
+					h3 {
+						margin-bottom: map-get($spacers, 2);
+					}
+				}
 			}
 		}
 	}
 }
 // StartWrap
+.start-wrap {
+	display: flex;
+	justify-content: center;
+	width: 954px;
+	margin: auto;
+	margin-bottom: 32px;
+}
 
 // Safe
+.safe {
+	display: flex;
+	justify-content: start;
+	width: 954px;
+	margin: auto;
+	margin-bottom: 32px;
+	.safe-wrap {
+		.title {
+			margin-bottom: map-get($spacers, 3);
+			h2 {
+				font-size: 40px;
+				font-weight: 600;
+				margin-bottom: map-get($spacers, 2);
+			}
+			p {
+
+			}
+		}
+		.safe-list {
+			ul {
+				list-style: none;
+				display: flex;
+				justify-content: space-between;
+				.safe-list-item {
+					flex: 1;
+					margin-bottom: map-get($spacers, 3);
+					&:nth-child(2) {
+						padding-left: map-get($spacers, 4);
+						padding-right: map-get($spacers, 4);
+					}
+					.safe-list-item-content {
+						.title {
+							font-size: 24px;
+							font-weight: 600;
+							color: $primary;
+						}
+						.desctiption {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 // Media
+.media {
+	display: flex;
+	justify-content: center;
+	width: 954px;
+	margin: auto;
+	margin-bottom: 32px;
+}
 
 // App contents
+.app-contents {
+	display: flex;
+	justify-content: center;
+	width: 954px;
+	margin: auto;
+	margin-bottom: 32px;
+}

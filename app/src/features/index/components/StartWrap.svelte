@@ -6,7 +6,7 @@
 
 </style>
 
-<section class="strat-wrap">
+<section class="start-wrap">
 	<div class="register-wrap">
 		<div class="phone-img"></div>
 		<div class="middle-strat-box">
