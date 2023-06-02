@@ -1,5 +1,5 @@
 <script>
-	import Header from '/src/components/index/Header.svelte'
+	import Header from '/src/features/index/components/Header.svelte'
 </script>
 
 
@@ -7,8 +7,8 @@
 
 </style>
 
-<header>
-	<div>
+<header class="header">
+	<div class="header-container">
 		<Header/>
 	</div>
 </header>

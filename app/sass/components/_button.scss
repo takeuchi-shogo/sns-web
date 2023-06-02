@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+@mixin color {
+	background-color: $primary;
+}
+
+.button {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: $primary;
+	text-align: center;
+	color: $white;
+	border: 1px solid transparent;
+	border-radius: 8px;
+
+	&.medium {
+		font-size: 14px;
+		font-weight: 400;
+		padding: 16px 24px;
+	}
+
+	&.large {
+		font-size: 16px;
+		font-weight: 600;
+		padding: 16px 24px;
+	}
+
+	// button color
+	&.button-color-secondary {
+		border: 1px $secondary solid;
+	}
+
+	&.button-color-success {
+		border: 1px $success solid;
+	}
+
+	&.button-color-danger {
+		border: 1px $danger solid;
+	}
+
+	&.button-color-light {
+		border: 1px $light solid;
+	}
+
+	&-outline-primary {
+		background-color: $white;
+		color: $dark;
+		border: 2px $primary solid;
+	}
+}

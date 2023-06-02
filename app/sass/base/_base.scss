@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+@use 'font' as *;
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body, html {
+	@include font-medium;
+	line-height: 21px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: $font-family-lig;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}

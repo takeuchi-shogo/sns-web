@@ -1,10 +1,13 @@
 .DS_Store
 .vscode
+.routify
 
 node_modules/
 
 app/public/**/bundle.*
+app/public/js/*
 app/public/css/style.*
+app/public/img/*
 
 Config.js
 

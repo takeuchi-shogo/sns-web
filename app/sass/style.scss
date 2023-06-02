@@ -1,17 +1,8 @@
-$p_color: green;
-$p_bg_color: yellow;
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'pages';
+@use 'themes';
+@use 'utilities';
  
-@import "~bootstrap/scss/bootstrap.scss";
-
-.login-block{
-  background: #DE6262;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-float:left;
-width:100%;
-padding : 50px 0;
-}
-
-.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
-
-.mb10{margin:0 0 10px 0;}
+// @import "~bootstrap/scss/bootstrap.scss";

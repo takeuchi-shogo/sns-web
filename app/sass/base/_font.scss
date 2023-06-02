@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+@mixin font-medium {
+	font-size: $font-default;
+	font-weight: 400;
+}
+
+@mixin font-large {
+	font-size: $font-large;
+	font-weight: 600;
+}

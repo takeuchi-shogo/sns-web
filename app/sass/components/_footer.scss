@@ -1,0 +1,95 @@
+@use '../abstracts/' as *;
+
+.footer {
+	width: 100%;
+	padding-bottom: map-get($spacers, 5);
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		// display: flex;
+		// justify-content: center;
+		width: 954px;
+		margin: auto;
+		margin-bottom: 32px;
+		.footer-wrap {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: map-get($spacers, 5);
+			.logo {
+
+			}
+			.footer-main {
+				.register-banner {
+					padding-bottom: map-get($spacers, 4);
+					.phone-img {}
+					.middle-strat-box {
+						.register-button-container {
+							padding-bottom: map-get($spacers, 2);
+							.login-facebook-button {
+								.login-facebook-button-start {
+									display: inline;
+									.tp-login-face-book {
+
+									}
+								}
+							}
+							.login-facebook-button-agree {
+								font-size: 12px;
+							}
+						}
+						.top-native-down {
+							display: flex;
+							justify-content: space-between;
+							list-style: none;
+							&-item {
+							}
+						}
+					}
+				}
+				.sns-and-notice {
+					.cmn-footer-tag-sns {
+						display: flex;
+						column-gap: map-get($spacers, 3);
+						list-style: none;
+						padding-bottom: map-get($spacers, 2);
+						.cmn-footer-tag-sns-item {
+							img {
+								width: 44px;
+								height: 44px;
+							}
+						}
+					}
+					.notice {
+						font-size: 12px;
+						line-height: 18px;
+					}
+				}
+			}
+		}
+		.footer-nav-wrapper {
+			padding-bottom: map-get($spacers, 4);
+			.footer-nav {
+				ul {
+					padding-bottom: map-get($spacers, 2);
+					list-style: none;
+					display: flex;
+					justify-content: space-between;
+					li {
+						font-size: 14px;
+						font-weight: 600;
+					}
+				}
+				.footer-label-truste {
+					font-size: 12px;
+					font-weight: 400;
+				}
+				.footer-copyright{
+					&.footer-copyright-left {}
+				}
+			}
+		}
+		.iovation-snare-js {
+			font-weight: 600;
+		}
+	}
+}
