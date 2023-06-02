@@ -8,11 +8,11 @@
 
 <section class="select">
 	<div class="select-wrap">
-		<div class="title">
+		<div class="select-title">
 			<h2>選ばれている理由</h2>
 			<p>
 				累計会員数xxxx万人
-				<span class="select-footnote">※</span>
+				<span class="select-title-footer">※</span>
 				突破。お客様に選ばれて、多くのマッチングを生み出した理由。
 			</p>
 			<p class="select-footnote-body">

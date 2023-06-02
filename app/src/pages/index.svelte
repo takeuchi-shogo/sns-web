@@ -1,18 +1,17 @@
 <script>
 	import Dashboard from '/src/pages/dashboard/Dashboard.svelte'
-	import LP from '/src/pages/LP.svelte'
+	import LP from '/src/pages/_LP.svelte'
 
 	import Me from '/src/database/MeRepository.js'
 
-	export let category = ''
-	export let article = ''
+	// export let category = ''
+	// export let article = ''
 
 	const _me = new Me
 
 	let initialized = false
 
 	let user = null
-	$: console.log(initialized)
 
 	function init() {
 		_me.get((error, message, data) => {
@@ -30,13 +29,7 @@
 </script>
 
 { #if !initialized }
-	<LP
-		category={ category }
-		article={ article }
-	/>
+	<LP />
 { :else if initialized }
-	<Dashboard
-		category={ category }
-		article={ article }
-	/>
+	<Dashboard />
 { /if }

@@ -12,6 +12,21 @@ $spacers: (
 	6: $spacer * 2.5,
 );
 
+// border
+$border-width: 1px !default;
+$border-widths: (
+	1: 1px,
+	2: 2px,
+	3: 3px,
+	4: 4px,
+	5: 5px,
+) !default;
+
+// border radius
+$border-radius:               4px !default;
+$border-radius-sm:            8px !default;
+$border-radius-lg:            12px !default;
+$border-radius-pill:          50% !default;
 
 // font family
 $font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
@@ -24,11 +39,11 @@ $font-default: 14px;
 $font-small: 13px;
 $font-xsmall: 10px;
 
-
+// fond weight
 $font-weight-default: 400px;
 $font-weight-bold: 600px;
 
-
+// line height
 $line-height-small: 18px;
 $line-height-defalut: 21px;
 $line-height-large: 22.4px;

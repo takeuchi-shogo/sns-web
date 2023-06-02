@@ -8,7 +8,7 @@
 </style>
 
 <footer class="footer">
-	<div>
+	<div class="footer-container">
 		<Footer/>
 	</div>
 </footer>

@@ -40,7 +40,7 @@
 			</div>
 		</section>
 		<div class="nav-container-center">
-			<a href="/">すべてのレポートを見る</a>
+			<a class="button button-outline-primary large" href="/">すべてのレポートを見る</a>
 		</div>
 	</div>
 </section>
